@@ -18,11 +18,11 @@
     background: var(--bg);
     color: var(--text);
     font-family: Georgia, 'Times New Roman', serif;
-    font-size: 15px;
-    line-height: 1.55;
+    font-size: 17px;
+    line-height: 1.6;
   }
   .page {
-    max-width: 800px;
+    max-width: 880px;
     margin: 40px auto;
     padding: clamp(20px, 5vw, 48px);
     background: #fff;
@@ -39,7 +39,7 @@
   header h1 {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     font-weight: 800;
-    font-size: clamp(22px, 5vw, 32px);
+    font-size: clamp(26px, 5.5vw, 36px);
     line-height: 1.1;
     letter-spacing: -0.02em;
     text-transform: uppercase;
@@ -49,13 +49,13 @@
     font-weight: 700;
     color: var(--accent);
     margin: 0 0 12px;
-    font-size: 14px;
+    font-size: 16px;
   }
   header .contact {
     display: flex;
     flex-direction: column;
     gap: 6px;
-    font-size: 14px;
+    font-size: 16px;
   }
   header .contact a { color: var(--accent); text-decoration: none; }
   header .contact a:hover { text-decoration: underline; }
@@ -66,9 +66,9 @@
   }
   header .contact-item svg {
     flex: none;
-    width: 14px;
-    height: 14px;
-    margin-top: 3px;
+    width: 16px;
+    height: 16px;
+    margin-top: 4px;
     color: var(--accent);
   }
   header img {
@@ -81,7 +81,7 @@
   }
   section {
     display: grid;
-    grid-template-columns: 130px 1fr;
+    grid-template-columns: 160px 1fr;
     gap: 24px;
     border-bottom: 1px solid var(--divider);
     border-left: 3px solid var(--accent-300);
@@ -97,7 +97,7 @@
     gap: 7px;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 13.5px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--accent);
@@ -105,21 +105,22 @@
   }
   section h2 svg {
     flex: none;
-    width: 15px;
-    height: 15px;
+    width: 17px;
+    height: 17px;
     margin-top: 1px;
   }
   .details-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 6px 24px;
-    font-size: 14px;
+    gap: 8px 24px;
+    font-size: 16px;
   }
-  .details-grid .row { display: grid; grid-template-columns: 110px 1fr; gap: 8px; }
+  .details-grid .row { display: grid; grid-template-columns: 124px 1fr; gap: 8px; }
   .details-grid .label { color: var(--muted); }
-  .entry-list { display: grid; gap: 16px; }
-  .entry { display: grid; grid-template-columns: 104px 1fr; gap: 16px; }
+  .entry-list { display: grid; gap: 20px; }
+  .entry { display: grid; grid-template-columns: 128px 1fr; gap: 16px; }
   .entry .year { font-weight: 600; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .entry .year .nowrap { white-space: nowrap; }
   .entry .title { font-weight: 700; }
   .entry .sub { color: var(--muted); }
   .sub-list { display: grid; gap: 2px; margin-top: 4px; color: var(--muted); }
@@ -129,19 +130,19 @@
     margin: 6px 0 0;
     padding-left: 18px;
     display: grid;
-    gap: 3px;
-    font-size: 13.5px;
+    gap: 4px;
+    font-size: 15.5px;
     color: var(--text);
   }
   .entry ul li::marker { color: var(--accent); }
   .skill-item .title { font-weight: 700; margin-bottom: 3px; }
-  .skill-item p { margin: 0; font-size: 13.5px; color: var(--muted); line-height: 1.5; }
+  .skill-item p { margin: 0; font-size: 15.5px; color: var(--muted); line-height: 1.55; }
   .skill-item ul {
     margin: 6px 0 0;
     padding-left: 18px;
     display: grid;
-    gap: 3px;
-    font-size: 13.5px;
+    gap: 4px;
+    font-size: 15.5px;
   }
   .skill-item ul li::marker { color: var(--accent); }
   .skill-item ul a { color: var(--accent); text-decoration: none; }
@@ -158,20 +159,20 @@
     color: var(--accent);
     text-decoration: none;
     font-weight: 600;
-    font-size: 13.5px;
+    font-size: 15.5px;
   }
   .qr-row .link-block a:hover { text-decoration: underline; }
   .qr-row .link-block .url {
     display: block;
     margin-top: 2px;
-    font-size: 11px;
+    font-size: 13px;
     color: var(--muted);
     word-break: break-all;
   }
   .qr-row img {
     flex: none;
-    width: 56px;
-    height: 56px;
+    width: 64px;
+    height: 64px;
     border: 1px solid var(--divider);
     padding: 2px;
     background: #fff;
@@ -182,8 +183,8 @@
   /* Tablet: tighten the label column, keep two-up layouts */
   @media (max-width: 720px) {
     .page { margin: 16px auto; }
-    section { grid-template-columns: 100px 1fr; gap: 16px; }
-    .entry { grid-template-columns: 88px 1fr; gap: 12px; }
+    section { grid-template-columns: 124px 1fr; gap: 16px; }
+    .entry { grid-template-columns: 112px 1fr; gap: 12px; }
   }
 
   /* Mobile: stack everything into a single column */
@@ -204,11 +205,11 @@
     }
     section h2 { margin-bottom: 4px; }
     .details-grid { grid-template-columns: 1fr; }
-    .details-grid .row { grid-template-columns: 100px 1fr; }
+    .details-grid .row { grid-template-columns: 124px 1fr; }
     .entry { grid-template-columns: 1fr; gap: 2px; }
     .entry .year { order: -1; }
     .sub-list .sub-row { grid-template-columns: 1fr; gap: 0; }
-    .sub-row .yr { color: var(--muted); font-size: 13px; }
+    .sub-row .yr { color: var(--muted); font-size: 15px; }
   }
 
   /* Print: ignore screen chrome, fit to page */
@@ -235,7 +236,7 @@
   }
   .topnav .brand {
     font-weight: 800;
-    font-size: 13px;
+    font-size: 14.5px;
     letter-spacing: 0.03em;
     color: var(--text);
     text-transform: uppercase;
@@ -251,7 +252,7 @@
   }
   .topnav a, .topnav button {
     font-family: inherit;
-    font-size: 12px;
+    font-size: 13.5px;
     font-weight: 700;
     text-decoration: none;
     border: 1px solid var(--divider);
@@ -318,7 +319,7 @@
 
   <section>
     <h2><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg><span>Summary</span></h2>
-    <p style="margin: 0; font-size: 14px; line-height: 1.65;">I'm a medical graduate by training, with an Msc. in Public Health, but most of my working life has actually been spent on the education and operations side of Yayasan ADDIN Perak — keeping schools supplied, making sure zakat reaches the people who need it, and helping the public understand what is being offered in Yayasan ADDIN's schools. Alongside that, teaching Tahsin and Tadabbur Al-Quran has stayed a constant for me since 2018, across a few different masjids and communities in Perak. I'd describe myself as someone who's equally comfortable with data and spreadsheets as I am trained to work with tools like IBM SPSS, Google Sheets, Google Data Studio and others. I'm also a frequent user and avid learner of artificial intelligence (AI) tools, especially Claude, ChatGPT and Gemini.</p>
+    <p style="margin: 0; font-size: 16px; line-height: 1.7;">I'm a medical graduate by training, with an Msc. in Public Health, but most of my working life has actually been spent on the education and operations side of Yayasan ADDIN Perak — keeping schools supplied, making sure zakat reaches the people who need it, and helping the public understand what is being offered in Yayasan ADDIN's schools. Alongside that, teaching Tahsin and Tadabbur Al-Quran has stayed a constant for me since 2018, across a few different masjids and communities in Perak. I'd describe myself as someone who's equally comfortable with data and spreadsheets as I am trained to work with tools like IBM SPSS, Google Sheets, Google Data Studio and others. I'm also a frequent user and avid learner of artificial intelligence (AI) tools, especially Claude, ChatGPT and Gemini.</p>
   </section>
 
   <section>
@@ -373,7 +374,7 @@
     <h2><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><span>Career Experience</span></h2>
     <div class="entry-list">
       <div class="entry">
-        <div class="year">Since 2020</div>
+        <div class="year">2020 – <span class="nowrap">Sept 2026</span></div>
         <div>
           <div class="title">Operation Manager</div>
           <div class="sub">Yayasan ADDIN Perak</div>
@@ -432,10 +433,10 @@
         <div class="qr-list">
           <div class="qr-row">
             <div class="link-block">
-              <a href="https://bazliamin90.github.io/sitnplay/t" target="_blank" rel="noopener">Al-Quran Mushaf Madinah</a>
-              <span class="url">bazliamin90.github.io/sitnplay/t</span>
+              <a href="https://bazliamin90.github.io/mushaf/" target="_blank" rel="noopener">Al-Quran Mushaf Madinah</a>
+              <span class="url">bazliamin90.github.io/mushaf/</span>
             </div>
-            <img src="data:image/png;base64,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" alt="QR code linking to Al-Quran Mushaf Madinah">
+            <img src="data:image/png;base64,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" alt="QR code linking to Al-Quran Mushaf Madinah">
           </div>
           <div class="qr-row">
             <div class="link-block">
@@ -511,7 +512,7 @@
     <div>
       <div class="title">Mohd Kamaruzaman Bin Daud</div>
       <div class="sub">Chief Operating Officer (Administration), Yayasan ADDIN Perak</div>
-      <div style="margin-top:8px; display:grid; gap:2px; font-size:14px;">
+      <div style="margin-top:8px; display:grid; gap:2px; font-size:16px;">
         <div>013-4377663</div>
         <div><a href="mailto:mohdkamaruzamandaud@gmail.com" style="color:var(--accent); text-decoration:none;">mohdkamaruzamandaud@gmail.com</a></div>
       </div>
